@@ -8,6 +8,16 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene <SKPhysicsContactDelegate> //In colaboration with contactBitMask property in SKPhysicsBody and SKPhysicsWorld
+
+@property (nonatomic)int ammo;
+
+@property (nonatomic)int score;
+
+@property (nonatomic)int pointValue;
+
+@property (nonatomic)BOOL multiMode;
+
+@property (nonatomic)BOOL gamePaused;
 
 @end
